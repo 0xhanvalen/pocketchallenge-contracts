@@ -5,7 +5,6 @@
 // will compile your contracts, add the Hardhat Runtime Environment's members to the
 // global scope, and execute the script.
 const { ethers } = require("hardhat");
-const hre = require("hardhat");
 
 async function main() {
   const safeNFT = await ethers.getContractFactory("SafeNFT");

@@ -27,6 +27,7 @@ contract UnsafeNFT is ERC721 {
 
     mapping(address => bool) public approvedOperators;
 
+    // overriding the setApproval function means that held NFTs can't interact with marketplaces
     function setApprovalForAll(address operator, bool approved)
         public
         override
